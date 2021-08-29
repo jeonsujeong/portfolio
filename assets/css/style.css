@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50px;
   right: 15px;
   bottom: 15px;
-  background: #149ddd;
+  background: #B45005;
   color: #fff;
   transition: display 0.5s ease-in-out;
   z-index: 99999;
@@ -52,7 +52,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .back-to-top:hover {
   color: #fff;
-  background: #2eafec;
+  background: #FA6E00;
   transition: background 0.2s ease-in-out;
 }
 
@@ -69,15 +69,15 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 9997;
   transition: all 0.5s;
   padding: 0 15px;
-  background: #040b14;
+  background: #FA6E00;
   overflow-y: auto;
 }
 
 #header .profile img {
-  margin: 15px auto;
+  margin: 50px auto 20px auto;
   display: block;
   width: 120px;
-  border: 8px solid #2c2f3f;
+  border: 8px double #000000;
 }
 
 #header .profile h1 {
@@ -91,7 +91,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .profile h1 a, #header .profile h1 a:hover {
-  color: #fff;
+  color: #000000;
   text-decoration: none;
 }
 
@@ -110,8 +110,12 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
 }
 
+.text-light>a:hover{
+  text-shadow: 2px 2px 2px #222;
+}
+
 #header .profile .social-links a:hover {
-  background: #149ddd;
+  background: #FA6E00;
   color: #fff;
   text-decoration: none;
 }
@@ -155,7 +159,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 12px 15px;
   margin-bottom: 8px;
   transition: 0.3s;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 .nav-menu a i {
@@ -170,7 +174,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu a:hover i, .nav-menu .active > a i, .nav-menu li:hover > a i {
-  color: #149ddd;
+  color: #000000;
 }
 
 /* Mobile Navigation */
@@ -226,6 +230,17 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 1;
 }
 
+#skillimg {
+  /* border:1px solid black; */
+  width:100%;
+  text-align: center;
+}
+#skillimg > img {
+  margin:8px;
+  width:80px;
+  height:100%;
+}
+
 #hero .hero-container {
   position: relative;
   z-index: 2;
@@ -238,6 +253,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: 56px;
   color: #fff;
+  text-shadow: 2px 2px 2px #222;
 }
 
 #hero p {
@@ -251,7 +267,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   padding-bottom: 4px;
   letter-spacing: 1px;
-  border-bottom: 3px solid #149ddd;
+  border-bottom: 3px solid #FA6E00;
 }
 
 @media (min-width: 1024px) {
@@ -275,6 +291,12 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
+
+.img-fluid {
+  
+  border:8px double black;
+
+}
 section {
   padding: 60px 0;
   overflow: hidden;
@@ -294,7 +316,8 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #173b6c;
+  color: white;
+  -webkit-text-stroke: 2px black;
 }
 
 .section-title h2::after {
@@ -303,7 +326,7 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: #149ddd;
+  background: #FA6E00;
   bottom: 0;
   left: 0;
 }
@@ -397,7 +420,7 @@ section {
 # Akills
 --------------------------------------------------------------*/
 .skills .progress {
-  height: 50px;
+  height: 60px;
   display: block;
   background: none;
 }
@@ -425,7 +448,7 @@ section {
   width: 1px;
   height: 10px;
   transition: .9s;
-  background-color: #149ddd;
+  background-color: #FA6E00;
 }
 
 /*--------------------------------------------------------------
@@ -442,7 +465,7 @@ section {
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #1f5297;
+  border-left: 2px solid #b14d00;
   position: relative;
 }
 
@@ -486,14 +509,14 @@ section {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #1f5297;
+  border: 2px solid #333;
 }
 
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
 .portfolio .portfolio-item {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .portfolio #portfolio-flters {
@@ -520,7 +543,7 @@ section {
 }
 
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-  color: #149ddd;
+  color: #FA6E00;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -552,29 +575,31 @@ section {
   left: 0;
   right: 0;
   bottom: -60px;
-  z-index: 3;
+  /* margin-bottom: 30px; */
+  z-index: 3; 
   position: absolute;
   transition: all ease-in-out 0.3s;
   display: flex;
-  justify-content: center;
+  justify-content: initial;
+  /* border: 1px solid black; */
 }
 
 .portfolio .portfolio-wrap .portfolio-links a {
   color: #fff;
   font-size: 28px;
   text-align: center;
-  background: rgba(20, 157, 221, 0.75);
+  background: rgba(250, 120, 0, 0.75);
   transition: 0.3s;
-  width: 50%;
+  width: 100%;
 }
 
-.portfolio .portfolio-wrap .portfolio-links a:hover {
-  background: rgba(20, 157, 221, 0.95);
-}
+/* .portfolio .portfolio-wrap .portfolio-links a:hover {
+  background: rgba(180, 80, 5, 0.95);
+} */
 
-.portfolio .portfolio-wrap .portfolio-links a + a {
-  border-left: 1px solid #37b3ed;
-}
+/* .portfolio .portfolio-wrap .portfolio-links a + a {
+  border-left: 1px solid #FA6E00;
+} */
 
 .portfolio .portfolio-wrap:hover::before {
   top: 0;
@@ -585,8 +610,15 @@ section {
 }
 
 .portfolio .portfolio-wrap:hover .portfolio-links {
-  opacity: 1;
+  opacity: 0.5;
   bottom: 0;
+  height:350px;
+  line-height:350px;
+}
+
+.portfolio .portfolio-wrap .img-fluid{
+  height:350px;
+  width:350px;
 }
 
 /*--------------------------------------------------------------
