@@ -1,7 +1,7 @@
 <html>
 
 <head>
-	<title>Project Details</title>
+	<title>Spring Project</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
@@ -56,22 +56,28 @@
 					<p>개발 툴 : Eclipse, STS, SQL Develop 등</p>
 					<p>운영체제 및 개발 서버 : Windows 10, Tomcat 8.0.5, Oracle Database 11g, SVN</p>
 					<br> -->
-					<h2>개인 생활 루틴 관리 시스템 </h2>
+					<h2>개인 생활 습관 형성 웹 사이트 </h2>
 					<h3>프로젝트명: RoutineMaker</h3>
 					<br>
 					<h4>일정 및 참여인원</h4>
-					<p>2021. 08. 10 ~ 2021. 09. 03(25일간) / 5->2명</p>
-					<h4>프로젝트 환경</h4>
-					<p>JAVA, JSP, jQuery, ORACLE, HTML, CSS, Javascript, Bootstrap, Spring</p>
+					<p>2021. 08. 10 ~ 2021. 09. 03(25일간) / 3명</p>
+					<h4>언어 및 라이브러리</h4>
+					<p>Spring,AJAX, MyBatis,JAVA, JSP, jQuery, ORACLE, HTML, CSS, Javascript, Bootstrap</p>
+					<h4>개발도구</h4>
+					<p>Eclipse, SQL developer,Visual Studio Code, eXERD,SourceTree,GitHub </p>
 					<h4></h4>
 					<ul>
-						<li> 📌 개인 생활을 관리해주는 습관 형성 시스템.</li>
-						<li> 📌 루틴을 추천,공유,알람을 할 수 있고 루틴마다 다양한 설정 가능</li>
-						<li> 📌 루틴을 챌린지로 설정하고 포인트를 사용 및 적립할 수 있다.</li>
+						<li> 📌 개인 생활을 관리해주는 습관 형성 사이트.</li>
+						<li> 📌 루틴을 추천,공유,알람을 할 수 있고 루틴마다 다양한 설정 기능</li>
+						<li> 📌 자신만의 루틴 회고를 작성하여 습관 형성에 셀프 피드백 기능</li>
+						<li> 📌 루틴을 챌린지로 설정하고 챌린지 달성에 따른 포인트를 사용 및 적립 기능</li>
 						<li> 📌 루틴을 월간,주간으로 나누어 시각적으로 통계 구현</li>
+						<li> 📌 사용자의 루틴 달성율을 신호등으로 표현하여 직관적 확인 기능</li>
 					</ul>
 				</div>
+
 			</div>
+			<br><br>
 		</section>
 
 
@@ -81,34 +87,81 @@
 
 				<h2 style="margin:10px 0 0 0;">담당 구현 업무 👌</h2><br>
 				<div class="innerside" id="box1">
-					<h2>진행중입니다.</h2>
-					<!-- <br>
-					<h2>1️⃣ 로그인</h2>
-					<p class="image fit"><img src="assets/img/portfolio/portfolio-1-1.jpg" alt="로그인화면" /></p>
-					<div style="height:60px;" id="second"></div>
-					<h2>2️⃣ 퇴실하기</h2>
-					<p class="image fit"><img src="assets/img/portfolio/portfolio-1-2.jpg" alt="퇴실하기화면" />
-					</p>
-					<div style="height:50px;" id="third"></div>
-					<h2>3️⃣ 퇴실완료</h2>
-					<p class="image fit"><img src="assets/img/portfolio/portfolio-1-3.jpg" alt="퇴실완료화면" />
-					</p> -->
+					<br id="first">
+					<h2>1️⃣ 요구사항/순서도/ERD 작성</h2>
+					<p class="image fit"><img src="assets/img/portfolio/portfolio-5-1.jpg" alt="" /></p>
+					<p class="image fit"><img src="assets/img/portfolio/portfolio-5-2.jpg" alt="" /></p>
+					<p class="image fit"><img src="assets/img/portfolio/portfolio-5-3.jpg" alt="" /></p>
+					<p class="image fit"><img src="assets/img/portfolio/portfolio-5-4.jpg" alt="" /></p>
+					<div style="height:50px;" id="second"></div>
+					<h2>2️⃣ DDL/DummyData 작성</h2>
+					<p class="image fit"><img src="assets/img/portfolio/portfolio-5-5.jpg" alt="" /></p>
+					<br><br>
+					<h4>Query/Dummy DB 생성</h4>
+					<P style="width:800px;">사용자의 루틴등록현황/ 달성유무/ 루틴반복일자 등 사용자가 등록한 루틴에 대한 상세내역과 그에 따른 달성 유무에 대해서 더미를
+						생성하였고, 통계를 담당업무로 하다보니 Query로 계산해야 할 값들이 많았다. 월별 성공 달성율과 현재일을 기준으로 지난루틴과 진행루틴을 나눠 출력하고 현재일까지 성공한
+						달성율을 계산하여 출력하였다. </P>
+					<div style="height:100px;" id="third"></div>
+					<h2>3️⃣ Front-end </h2>
+					<p class="image fit"><img src="assets/img/portfolio/portfolio-5-7.jpg" alt="" /></p>
+					<br>
+					<h4> HTML/CSS 작성</h4>
+					<P style="width:800px;"> 사용자의 정보를 왼쪽 상단에 출력하고 라디오버튼과 목록태그를 이용하여 지난루틴과 진행루틴을 구별해서 출력할 수 있도록 구현했다. 오른쪽
+						상단에는 이모지와 테이블태그를 이용하여 달력을 현재일 기준 달력을 출력하였고 하단에는 부트스트랩을 이용하여 막대그래프를 구현하였다. </P>
+					<br><br><br><br id="fourth">
+					<h2>4️⃣ Spring / jsp </h2>
+					<p class="image fit" style="width:900px;"><img src="assets/img/portfolio/portfolio-5-9.jpg" alt="" /></p>
+					<p class="image fit"><img src="assets/img/portfolio/portfolio-5-11.jpg" alt="" /></p>
+					
+					<h4> 서버 연결</h4>
+					<P style="width:1000px;"> 루틴추천의 종합베스트 순위를 출력할 때 테이블의 td태그별로 리스트가 출력되고 부트스트랩으로 구현한 리스트의 색상이 반복해서 바뀌게
+						출력하기 위해 el로 반복문을 사용하여 구현하였고, 검색기능을 구현하기 위해 단어로 검색된 루틴들을 json형태로 배열에 저장한 후 Ajax를 사용하여 검색된 루틴들을
+						출력할 수 있도록 구현하였다. 출력된 리스트가 최신순, 등록순 등 순서를 선택하여 나열될 수 있도록 구현하였다.<br> 모달 기술을 사용하여 종합베스트루틴에 있는 루틴을 선택하면 내 루틴으로 퍼갈 수 있는 루틴추가 창이 뜨도록 구현하였다. </P>
+					<br><br>
+					<a href="#third" style="margin-left:1000px;">BACK</a>
+					<h1></h1>
+					<br>
 				</div>
-				<!-- <div class="innerside" id="box2">
-					<div style="height:40px;"></div>
-					<h4>회원, 비회원, 관리자 로그인</h4>
-					<p>BufferedReader, Writer(new FileReader, Writer( "path" ))을 사용해 사용자에게 데이터(ID,PW)를 입력받고 ArrayList
-						<'T'>, HashMap<'T'>로 회원으로 저장되어 있는 DB와 입력받은 데이터가 일치한지 확인하는 메서드로 로그인 기능을 구현했다.
-					</p><a href="#second" style="margin-left:500px;">NEXT</a>
-					<div style="height:350px;"></div>
-					<h4>회원, 비회원 퇴실처리 전 이용내역 조회</h4>
-					<p>로그인 한 사용자 정보를 입력받아 데이터를 DB와 비교한 후 Calendar 클래스와 getTimeInMillis()로 사용자가 입실한 일시와 퇴실을 원하는 일시를 날짜 계산
-						하였고, 계산된 시간을 통해 사용자가 추가금 또는 남은 시간 적립의 양을 연산하도록 구현했다. </p><a href="#third"
-						style="margin-left:500px;">NEXT</a>
-					<div style="height:450px;"></div>
-					<h4>회원, 비회원 퇴실처리</h4>
-					<p>연산된 사용자의 이용 시간을 ArrayList()로 다시 DB에 저장하고 사용자의 상태를 로그아웃 상태로 변환하여 저장하게 메소드를 구현했다.
-				</div> -->
+				<div class="innerside" id="box2">
+					<div style="height:50px;"></div>
+					<h4> 기획서 / 요구사항 / ERD 작성 </h4>
+					<p>기존의 스케줄 웹 사이트를 분석하여 벤치마킹하고 우리만의 '차별점'을 구상하였다.</p>
+					<br>
+					<ul>
+						<li>🔹 루틴에 대한 Daily회고와 Weekly회고를 작성하여 꾸준한 루틴관리가 가능하다.</li>
+						<li>🔹 본인의 루틴 달성율을 신호등으로 표현하여 직관적으로 확인 가능하다.</li>
+						<li>🔹 함께하면 좋은 루틴 세트를 소개하고 사용자들의 참여를 유도한다.</li>
+					</ul>
+					<!-- <a href="#second" style="margin-left:500px;">NEXT</a> -->
+					<div style="height:20px;"></div>
+					<h4>순서도</h4>
+					<p>사용자가 로그인, 아이디/비밀번호 찾기, 회원가입을 할 수 있고 마이루틴, 추천루틴, 챌린지, 캘린더, 소셜, 마이페이지 를 사용할 수 있다. <br>마이루틴에서는 루틴에
+						대한 상세 기능을 사용할 수 있고 데일리 회고를 작성 및 수정/삭제가 가능하다. <br>추천 루틴은 어떤 루틴이 있는지 검색할 수 있고 총 루틴의 종합 베스트 순위, 비슷한
+						루틴끼리 모여 테마별로 추천이 되는 루틴세트 기능을 사용할 수 있다.<br> 같은 루틴을 달성하고 싶은 사용자끼리 모여 챌린지를 개설할 수 있고 참여하여 달성에 따른 포인트
+						적립과 차감이 가능하다. <br> 사용자가 작성했던 루틴의 테마와 총 등록된 루틴의 갯수 대비 달성율을 계산하여 캘린더와 신호등으로 시각적으로 확인이 가능하다.<br>
+						사용자끼리 서로의 루틴을 구경할 수 있고 다 루티너를 검색할 수 있다. 다른 루티너의 루틴을 스크랩해서 내 루틴으로 추가 가능하고 다른 루티너의 루틴에 응원하기 기능이
+						있다. <br> 마이페이지에서는 루틴별 알람설정이 가능하고 챌린지 참여에 필요한 포인트를 충전할 수 있고 현금으로 환급할 수 있다. </p>
+					<div style="height:20px;"></div>
+					<h4>화면UI 작성</h4>
+					<p>사용자가 등록하고 달성한 루틴을 월별로 통계내어 달성률을 시각화하고 현재일을 기준으로 이번달에 달성해야하는 루틴과 지난 과거의 루틴을 버튼별로 보이게 화면 구성을 카카오오븐을
+						사용하여 대략적인 UI를 설계하였다. </p><br><br><br><br>
+					<a href="#second" style="margin-left:550px;"">NEXT</a>
+					<!-- <a href=" #third" style="margin-left:500px;">NEXT</a> -->
+					<div style="height:290px;"></div>
+					<p Class="image fit"><img src="assets/img/portfolio/portfolio-5-6.jpg" alt="" /></p>
+					<br><br><br><br><br><br>
+					<a href="#first" style="margin-left:470px;">BACK</a>
+					<a href="#third" style="margin-left:30px;">NEXT</a>
+					<br><br><br><br><br><br>
+					<p class="image fit"><img src="assets/img/portfolio/portfolio-5-8.jpg" alt="" /></p>
+					<br><br><br><br><br><br>
+					<a href="#second" style="margin-left:470px;">BACK</a>
+					<a href="#fourth" style="margin-left:30px;">NEXT</a>
+					<div style="height:750px;"></div>
+					<p class="image fit"><img src="assets/img/portfolio/portfolio-5-10.jpg" alt="" /></p>
+					
+
+				</div>
 			</div>
 			</p>
 		</section>
@@ -119,8 +172,7 @@
 			<div class="innerbox" style="height:500px;">
 				<div class="innerside" id="box3" style="width: 100%;">
 					<h3>프로젝트 후 🙏</h3>
-					<h2>진행중입니다.</h2>
-
+					두번째 웹 프로젝트인만큼 기획에 관해서는 자신감이 있던 상태였다. 그러나 습관 형성 관리로 주제를 결정한 후 기능에 대해 회의를 할 때 생각만큼 쉽지가 않았다. 우리만의 차별점과 사이트 기능을 선정하는데 구현기술과 DB구상을 연결해서 생각하다보니 더 어렵게 느껴졌다. 프로젝트 인원도 처음 5명에서 3명으로 줄면서 더 고난을 겪었다. <br>하지만 주변 상황에 흔들리지 않으려 노력했다. 내가 맡은 업무, 프로젝트내 순서에 맞는 업무를 계속 상기시키며 진행했다. 내가 맡은 업무를 성공적으로 마치기 위해서 기획한 기능부분을 이해가 될 때까지 읽고 계속해서 생각했다. 내가 해결하지 못하면 아무도 대신 해 줄 사람 없다고 생각했고 조원들에게 피해를 주고 싶지 않았기 때문이다.<br> 기획한대로 화면을 구현한 후 기술을 구현하는 단계에서 내가 이해한대로라면 기능에 연결된 DB가 잘못되었다는 것을 깨달았다. 기능에 대해 고민하고 적절한 유효 더미데이터로 수정하였고 이내 기술 구현에 집중할 수 있었다. <br>서블릿을 더 편하게 하는 기술이 스프링이라고 선생님께서 말씀해주셔서 처음 스프링 설정을 하고 매퍼, 서버를 설정하는데 복잡하여 도대체 이게 왜 서블릿보다 간단하고 간편한 기술인지 이해하지 못했다. 하지만 서블릿과 비교해서 서버와 데이터를 연결하고 에러를 해결하는 과정에서 스프링에 대해 점차 이해할 수 있었고 서블릿의 반복보다 훨신 편한 기술이구나를 느꼈다. json형태인 데이터를 ajax를 사용하여 불러내어 기능을 구현하였을 때는 진짜 재밌었고 진정한 웹 서버 프로그램을 만든 기분이 들었다.
 				</div>
 			</div>
 		</section>
@@ -140,7 +192,44 @@
 
 	</div>
 
+	<div class="modal">
+		<button>&times;</button>
+		<div class="modalBox">
+			<img src="" alt="">
+			<p></p>
+		</div>
+	</div>
+
 	<script>
+
+		$(function () {
+			// 	이미지 클릭시 해당 이미지 모달
+			$(".image").click(function () {
+				$(".modal").show();
+				// 해당 이미지 가겨오기
+				var imgSrc = $(this).children("img").attr("src");
+				var imgAlt = $(this).children("img").attr("alt");
+				$(".modalBox img").attr("src", imgSrc);
+				$(".modalBox img").attr("alt", imgAlt);
+
+				// 해당 이미지에 alt값을 가져와 제목으로
+				//$(".modalBox p").text(imgAlt);
+			});
+
+			//.modal안에 button을 클릭하면 .modal닫기
+			$(".modal button").click(function () {
+				$(".modal").hide();
+			});
+
+			//.modal밖에 클릭시 닫힘
+			$(".modal").click(function (e) {
+				if (e.target.className != "modal") {
+					return false;
+				} else {
+					$(".modal").hide();
+				}
+			});
+		});
 
 	</script>
 
